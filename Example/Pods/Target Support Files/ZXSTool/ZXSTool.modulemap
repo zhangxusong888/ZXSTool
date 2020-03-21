@@ -1,0 +1,6 @@
+framework module ZXSTool {
+  umbrella header "ZXSTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
