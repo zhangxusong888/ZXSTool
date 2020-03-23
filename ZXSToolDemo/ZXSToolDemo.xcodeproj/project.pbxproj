@@ -112,6 +112,7 @@
 				B31B502924260EAD00E172F4 /* Sources */,
 				B31B502A24260EAD00E172F4 /* Frameworks */,
 				B31B502B24260EAD00E172F4 /* Resources */,
+				B169D255ED31B0803470797C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B169D255ED31B0803470797C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB51BFD0A0FC07030CA0CA2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

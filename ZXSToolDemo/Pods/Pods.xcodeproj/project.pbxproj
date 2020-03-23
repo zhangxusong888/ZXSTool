@@ -7,51 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		419FB2717FBFA555D0E46B37DAA5CC82 /* Pods-ZXSToolDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41225572558E9097D75962F9CC22475B /* Pods-ZXSToolDemo-dummy.m */; };
-		76DFF63595D441BC8C0EFD2764FE2B99 /* Pods-ZXSToolDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6597874539F01A09794FF63FE61DF232 /* Pods-ZXSToolDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B448A3EC37134E6A6CBD51FB8201659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		67ED462B088D30CA88009DA171836F2E /* Pods-ZXSToolDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6294F68A77FC0528709A764AF6439 /* Pods-ZXSToolDemo-dummy.m */; };
+		A4F0B34685913E25F50B08B2881C6957 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BFB15B13449257BE54D564897E46F32A /* Pods-ZXSToolDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E1D9FD17BF34C3BAF3285B89457649 /* Pods-ZXSToolDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C00ACB6415C7FBF984C985F32FDB17E0 /* ZXSTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3A2A61F407261B39DE3A1701107D6C /* ZXSTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D03F74ED78BD81E786AB508220468661 /* ZXSTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00173B2831B4A7D8AEADC05A5E7A727D /* ZXSTool-dummy.m */; };
+		E1E38BEF5BCA14ADBF59FB9EA5821FC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F5C7B33BA81D89EB8F60B57A06071C2B /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1EAB1AB7B4C0EE0D94A4FEEA01AFC /* ReplaceMe.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CFEB1CD35B1C0547876EF77C84F076A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5FF6D360B4C0A1205124FACB15ADBA1;
+			remoteInfo = ZXSTool;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00173B2831B4A7D8AEADC05A5E7A727D /* ZXSTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXSTool-dummy.m"; sourceTree = "<group>"; };
+		0C87003C85E9C6D5CAF2FC5459097E48 /* Pods-ZXSToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1A15549611B0C5045C8F06C545016396 /* ZXSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.release.xcconfig; sourceTree = "<group>"; };
+		2658F63B447412B11086435283581A9B /* Pods-ZXSToolDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSToolDemo-Info.plist"; sourceTree = "<group>"; };
+		28568D480D840EDBB023472AB7892338 /* Pods-ZXSToolDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSToolDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CDAE344B2764102A3281D709401B6C7 /* Pods-ZXSToolDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZXSToolDemo.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41225572558E9097D75962F9CC22475B /* Pods-ZXSToolDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXSToolDemo-dummy.m"; sourceTree = "<group>"; };
 		5BA89F82AF4E0F437F973DEA03EB74FF /* Pods_ZXSToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXSToolDemo.framework; path = "Pods-ZXSToolDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6597874539F01A09794FF63FE61DF232 /* Pods-ZXSToolDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXSToolDemo-umbrella.h"; sourceTree = "<group>"; };
-		85F0042E7D9DC0AF07A204A830037676 /* Pods-ZXSToolDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSToolDemo-Info.plist"; sourceTree = "<group>"; };
-		87F5F281275E2BC6F9D0A8045972985F /* Pods-ZXSToolDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZXSToolDemo.modulemap"; sourceTree = "<group>"; };
+		62B6294F68A77FC0528709A764AF6439 /* Pods-ZXSToolDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXSToolDemo-dummy.m"; sourceTree = "<group>"; };
+		78E1D9FD17BF34C3BAF3285B89457649 /* Pods-ZXSToolDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXSToolDemo-umbrella.h"; sourceTree = "<group>"; };
+		83C52A2B1E7894D13192BFA020140CDF /* ZXSTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZXSTool.modulemap; sourceTree = "<group>"; };
+		83D83E09E0175E61288BA8D0222479D7 /* Pods-ZXSToolDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXSToolDemo-frameworks.sh"; sourceTree = "<group>"; };
+		88A1594B5CBC2DC85A2B77C54C347CEC /* ZXSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZXSTool-Info.plist"; sourceTree = "<group>"; };
+		96061D74745CEC7DB3E1127658DEB63C /* ZXSTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXSTool.framework; path = ZXSTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D692E11D7EFF066EC510A0F275AF7DEB /* Pods-ZXSToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSToolDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E937605BC598909C1B2E011419744A60 /* Pods-ZXSToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		ED2148F45FBE2848D3F8B4A11A937DDC /* Pods-ZXSToolDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXSToolDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7FA8180420F2B6CE4FB7E6371F7AF8B /* Pods-ZXSToolDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSToolDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1D21F56AB550A6AE850F7E5B540C48A /* Pods-ZXSToolDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXSToolDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AEC1EAB1AB7B4C0EE0D94A4FEEA01AFC /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ZXSTool/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		B45230E051357185B9F5393F66C60581 /* Pods-ZXSToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BD6043C951E08E67353C412D5C5F338E /* ZXSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.debug.xcconfig; sourceTree = "<group>"; };
+		E4551A2BF0EF70DB753FAEE4AC34E820 /* ZXSTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-prefix.pch"; sourceTree = "<group>"; };
+		EC3A2A61F407261B39DE3A1701107D6C /* ZXSTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E7D5A296FB73D3957753AD1F2EB96F5 /* Frameworks */ = {
+		513A80A0B7A4D1512C89D98D7F00FADE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B448A3EC37134E6A6CBD51FB8201659 /* Foundation.framework in Frameworks */,
+				A4F0B34685913E25F50B08B2881C6957 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077B9AC2C033E4976A1F1A476E3D5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E38BEF5BCA14ADBF59FB9EA5821FC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3EE21F4F03FEC678F3D23525DE98B66D /* Products */ = {
+		91D2699BF9984A20972DF97442274DD8 /* Pods-ZXSToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAE344B2764102A3281D709401B6C7 /* Pods-ZXSToolDemo.modulemap */,
+				A1D21F56AB550A6AE850F7E5B540C48A /* Pods-ZXSToolDemo-acknowledgements.markdown */,
+				28568D480D840EDBB023472AB7892338 /* Pods-ZXSToolDemo-acknowledgements.plist */,
+				62B6294F68A77FC0528709A764AF6439 /* Pods-ZXSToolDemo-dummy.m */,
+				83D83E09E0175E61288BA8D0222479D7 /* Pods-ZXSToolDemo-frameworks.sh */,
+				2658F63B447412B11086435283581A9B /* Pods-ZXSToolDemo-Info.plist */,
+				78E1D9FD17BF34C3BAF3285B89457649 /* Pods-ZXSToolDemo-umbrella.h */,
+				0C87003C85E9C6D5CAF2FC5459097E48 /* Pods-ZXSToolDemo.debug.xcconfig */,
+				B45230E051357185B9F5393F66C60581 /* Pods-ZXSToolDemo.release.xcconfig */,
+			);
+			name = "Pods-ZXSToolDemo";
+			path = "Target Support Files/Pods-ZXSToolDemo";
+			sourceTree = "<group>";
+		};
+		963707C5262D24BFFF781D2D67EDA468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5BA89F82AF4E0F437F973DEA03EB74FF /* Pods_ZXSToolDemo.framework */,
+				96061D74745CEC7DB3E1127658DEB63C /* ZXSTool.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		407FF413BA3959CA126E02EC89CF0810 /* Targets Support Files */ = {
+		AAE8EE8C9ED3B4FF6C2D79F132FEB21A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D6FF84806706119F2E74DF2D4ADAB69E /* Pods-ZXSToolDemo */,
+				EDC717E3DE136DB9E9F6C6DE65068F61 /* ZXSTool */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B850BF4784C6E5C7E9F64E387F148B36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C52A2B1E7894D13192BFA020140CDF /* ZXSTool.modulemap */,
+				00173B2831B4A7D8AEADC05A5E7A727D /* ZXSTool-dummy.m */,
+				88A1594B5CBC2DC85A2B77C54C347CEC /* ZXSTool-Info.plist */,
+				E4551A2BF0EF70DB753FAEE4AC34E820 /* ZXSTool-prefix.pch */,
+				EC3A2A61F407261B39DE3A1701107D6C /* ZXSTool-umbrella.h */,
+				BD6043C951E08E67353C412D5C5F338E /* ZXSTool.debug.xcconfig */,
+				1A15549611B0C5045C8F06C545016396 /* ZXSTool.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZXSTool";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -67,8 +132,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				3EE21F4F03FEC678F3D23525DE98B66D /* Products */,
-				407FF413BA3959CA126E02EC89CF0810 /* Targets Support Files */,
+				AAE8EE8C9ED3B4FF6C2D79F132FEB21A /* Pods */,
+				963707C5262D24BFFF781D2D67EDA468 /* Products */,
+				FE9FDF622B12A1FB326BEE83BD4FDFA7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,48 +146,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6FF84806706119F2E74DF2D4ADAB69E /* Pods-ZXSToolDemo */ = {
+		EDC717E3DE136DB9E9F6C6DE65068F61 /* ZXSTool */ = {
 			isa = PBXGroup;
 			children = (
-				87F5F281275E2BC6F9D0A8045972985F /* Pods-ZXSToolDemo.modulemap */,
-				ED2148F45FBE2848D3F8B4A11A937DDC /* Pods-ZXSToolDemo-acknowledgements.markdown */,
-				F7FA8180420F2B6CE4FB7E6371F7AF8B /* Pods-ZXSToolDemo-acknowledgements.plist */,
-				41225572558E9097D75962F9CC22475B /* Pods-ZXSToolDemo-dummy.m */,
-				85F0042E7D9DC0AF07A204A830037676 /* Pods-ZXSToolDemo-Info.plist */,
-				6597874539F01A09794FF63FE61DF232 /* Pods-ZXSToolDemo-umbrella.h */,
-				E937605BC598909C1B2E011419744A60 /* Pods-ZXSToolDemo.debug.xcconfig */,
-				D692E11D7EFF066EC510A0F275AF7DEB /* Pods-ZXSToolDemo.release.xcconfig */,
+				AEC1EAB1AB7B4C0EE0D94A4FEEA01AFC /* ReplaceMe.m */,
+				B850BF4784C6E5C7E9F64E387F148B36 /* Support Files */,
 			);
-			name = "Pods-ZXSToolDemo";
-			path = "Target Support Files/Pods-ZXSToolDemo";
+			name = ZXSTool;
+			path = ZXSTool;
+			sourceTree = "<group>";
+		};
+		FE9FDF622B12A1FB326BEE83BD4FDFA7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91D2699BF9984A20972DF97442274DD8 /* Pods-ZXSToolDemo */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E1DD3B1023356E2227714B165D79BDD9 /* Headers */ = {
+		03B41755DBB88D25F754CAF39E56232E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DFF63595D441BC8C0EFD2764FE2B99 /* Pods-ZXSToolDemo-umbrella.h in Headers */,
+				BFB15B13449257BE54D564897E46F32A /* Pods-ZXSToolDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E305C121939BFCF4B48F96080BC9314 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00ACB6415C7FBF984C985F32FDB17E0 /* ZXSTool-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E1046E743C10A65CCCED0226C0BCF109 /* Pods-ZXSToolDemo */ = {
+		D5FF6D360B4C0A1205124FACB15ADBA1 /* ZXSTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 284F47BF8D1329EA83BFD11A03C5C310 /* Build configuration list for PBXNativeTarget "Pods-ZXSToolDemo" */;
+			buildConfigurationList = D3030D9A015D96ABA08DC644CB03E13F /* Build configuration list for PBXNativeTarget "ZXSTool" */;
 			buildPhases = (
-				E1DD3B1023356E2227714B165D79BDD9 /* Headers */,
-				9B8DBBDE4D2EA3E0F52976EA9259AF37 /* Sources */,
-				8E7D5A296FB73D3957753AD1F2EB96F5 /* Frameworks */,
-				499EE9108783A95D7FD34CB74876AF30 /* Resources */,
+				6E305C121939BFCF4B48F96080BC9314 /* Headers */,
+				9E83D07B3210D371FD2D26DCB4AB4C33 /* Sources */,
+				513A80A0B7A4D1512C89D98D7F00FADE /* Frameworks */,
+				EE32D9643E2B5690FC2B175ADA51E2A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = ZXSTool;
+			productName = ZXSTool;
+			productReference = 96061D74745CEC7DB3E1127658DEB63C /* ZXSTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1046E743C10A65CCCED0226C0BCF109 /* Pods-ZXSToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E816C3073AB046148EDF4BEEFAB5176F /* Build configuration list for PBXNativeTarget "Pods-ZXSToolDemo" */;
+			buildPhases = (
+				03B41755DBB88D25F754CAF39E56232E /* Headers */,
+				4145F55A3D4E35DB91A0AF2FFBC5477E /* Sources */,
+				6077B9AC2C033E4976A1F1A476E3D5CC /* Frameworks */,
+				7B465D976E6FB8DEB7947FC24988188C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80B5E42034E794C4338CB0C834A68894 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZXSToolDemo";
 			productName = "Pods-ZXSToolDemo";
@@ -146,17 +241,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3EE21F4F03FEC678F3D23525DE98B66D /* Products */;
+			productRefGroup = 963707C5262D24BFFF781D2D67EDA468 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E1046E743C10A65CCCED0226C0BCF109 /* Pods-ZXSToolDemo */,
+				D5FF6D360B4C0A1205124FACB15ADBA1 /* ZXSTool */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		499EE9108783A95D7FD34CB74876AF30 /* Resources */ = {
+		7B465D976E6FB8DEB7947FC24988188C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE32D9643E2B5690FC2B175ADA51E2A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,23 +269,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B8DBBDE4D2EA3E0F52976EA9259AF37 /* Sources */ = {
+		4145F55A3D4E35DB91A0AF2FFBC5477E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419FB2717FBFA555D0E46B37DAA5CC82 /* Pods-ZXSToolDemo-dummy.m in Sources */,
+				67ED462B088D30CA88009DA171836F2E /* Pods-ZXSToolDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E83D07B3210D371FD2D26DCB4AB4C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7B33BA81D89EB8F60B57A06071C2B /* ReplaceMe.m in Sources */,
+				D03F74ED78BD81E786AB508220468661 /* ZXSTool-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		80B5E42034E794C4338CB0C834A68894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXSTool;
+			target = D5FF6D360B4C0A1205124FACB15ADBA1 /* ZXSTool */;
+			targetProxy = CFEB1CD35B1C0547876EF77C84F076A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		8EBADAE432A6AAD2894572E05D04AA55 /* Release */ = {
+		0C3B885F93C7682CE0940196EDD8786E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D692E11D7EFF066EC510A0F275AF7DEB /* Pods-ZXSToolDemo.release.xcconfig */;
+			baseConfigurationReference = BD6043C951E08E67353C412D5C5F338E /* ZXSTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXSTool/ZXSTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXSTool/ZXSTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZXSTool/ZXSTool.modulemap";
+				PRODUCT_MODULE_NAME = ZXSTool;
+				PRODUCT_NAME = ZXSTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0FE623973F9C1B6CDE791841ADEBC7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45230E051357185B9F5393F66C60581 /* Pods-ZXSToolDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -194,7 +348,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -216,7 +370,104 @@
 			};
 			name = Release;
 		};
-		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+		248099E7E4D8A2E83DB31CCE63D13A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C87003C85E9C6D5CAF2FC5459097E48 /* Pods-ZXSToolDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,12 +531,10 @@
 			};
 			name = Debug;
 		};
-		D39C57CE34ECA76B4DA01C166B653A8D /* Debug */ = {
+		A4058597086CCC57EF084EE54BA1DD41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E937605BC598909C1B2E011419744A60 /* Pods-ZXSToolDemo.debug.xcconfig */;
+			baseConfigurationReference = 1A15549611B0C5045C8F06C545016396 /* ZXSTool.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -295,106 +544,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXSTool/ZXSTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXSTool/ZXSTool-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZXSToolDemo/Pods-ZXSToolDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ZXSTool/ZXSTool.modulemap";
+				PRODUCT_MODULE_NAME = ZXSTool;
+				PRODUCT_NAME = ZXSTool;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		284F47BF8D1329EA83BFD11A03C5C310 /* Build configuration list for PBXNativeTarget "Pods-ZXSToolDemo" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D39C57CE34ECA76B4DA01C166B653A8D /* Debug */,
-				8EBADAE432A6AAD2894572E05D04AA55 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		D3030D9A015D96ABA08DC644CB03E13F /* Build configuration list for PBXNativeTarget "ZXSTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
-				ECB437504DF805BD96CAABF97400B526 /* Release */,
+				0C3B885F93C7682CE0940196EDD8786E /* Debug */,
+				A4058597086CCC57EF084EE54BA1DD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E816C3073AB046148EDF4BEEFAB5176F /* Build configuration list for PBXNativeTarget "Pods-ZXSToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248099E7E4D8A2E83DB31CCE63D13A61 /* Debug */,
+				0FE623973F9C1B6CDE791841ADEBC7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
