@@ -7,6 +7,7 @@
 //
 
 #import "ZXSViewController.h"
+#import <ZXSTool/ZXSTool.h>
 
 @interface ZXSViewController ()
 
@@ -20,10 +21,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)areaSelectorButtonTouched:(id)sender {
+    [ZXSTool launchAreaSelectorOnContorller:self currentArea:nil select:nil cancel:nil];
 }
+
 
 @end
