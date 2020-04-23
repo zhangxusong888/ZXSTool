@@ -62,15 +62,6 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
     self.areaTableView.dataSource = self;
     self.areaTableView.tableFooterView = [[UIView alloc] init]; // 空数据时防止出现分隔条纹
     self.areaTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    //
-    NSMutableArray *tempArray = [NSMutableArray array];
-    [self.provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
-        [tempArray addObject:cellModel];
-    }];
-    self.dataSource = [tempArray copy];
-    [self.areaTableView reloadData];
 }
 
 - (void)dealloc {
@@ -134,6 +125,25 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
+}
+
+#pragma mark - setter 当做属性观察来用
+// 数据源改变，就更新表格
+- (void)setDataSource:(NSArray<ZXSAreaCellModel *> *)dataSource {
+    _dataSource = dataSource;
+    [self.areaTableView reloadData];
+}
+
+// 设置省数组，就更新表格数据源到省列表
+- (void)setProvinceArray:(NSArray<ZXSProvinceModel *> *)provinceArray {
+    _provinceArray = provinceArray;
+    
+    NSMutableArray *tempArray = [NSMutableArray array];
+    [provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
+        [tempArray addObject:cellModel];
+    }];
+    self.dataSource = [tempArray copy];
 }
 
 @end

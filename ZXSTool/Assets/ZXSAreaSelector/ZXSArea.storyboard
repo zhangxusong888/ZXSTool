@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,22 +12,18 @@
         <scene sceneID="PxG-3U-DSB">
             <objects>
                 <viewController storyboardIdentifier="ZXSAreaSelectorViewController" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2U8-IN-vBV" customClass="ZXSAreaSelectorViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CJ0-Ck-4Sq"/>
-                        <viewControllerLayoutGuide type="bottom" id="VVX-HO-aJN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="riu-EP-pvo">
+                    <view key="view" contentMode="scaleToFill" id="riu-EP-pvo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaD-Sd-tEM" userLabel="空白取消按钮">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="415"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="381"/>
                                 <connections>
                                     <action selector="cancelButtonTouched:" destination="2U8-IN-vBV" eventType="touchUpInside" id="qIH-DF-5Cv"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqp-iM-CAE" userLabel="标题容器">
-                                <rect key="frame" x="0.0" y="415" width="414" height="46"/>
+                                <rect key="frame" x="0.0" y="381" width="414" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择所在地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smT-D0-Jb3">
                                         <rect key="frame" x="146" y="12.5" width="122" height="21"/>
@@ -73,7 +70,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4j-v8-xzn" userLabel="数据容器">
-                                <rect key="frame" x="0.0" y="461" width="414" height="435"/>
+                                <rect key="frame" x="0.0" y="427" width="414" height="435"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehh-MR-knv" userLabel="提示信息容器">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -247,17 +244,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qqp-iM-CAE" secondAttribute="trailing" id="683-K8-bg0"/>
-                            <constraint firstAttribute="trailing" secondItem="h4j-v8-xzn" secondAttribute="trailing" id="6dv-Ty-dZR"/>
+                            <constraint firstItem="slx-b4-tPD" firstAttribute="trailing" secondItem="qqp-iM-CAE" secondAttribute="trailing" id="683-K8-bg0"/>
+                            <constraint firstItem="slx-b4-tPD" firstAttribute="trailing" secondItem="h4j-v8-xzn" secondAttribute="trailing" id="6dv-Ty-dZR"/>
                             <constraint firstItem="DaD-Sd-tEM" firstAttribute="top" secondItem="riu-EP-pvo" secondAttribute="top" id="9ZC-mh-sN7"/>
                             <constraint firstItem="h4j-v8-xzn" firstAttribute="top" secondItem="qqp-iM-CAE" secondAttribute="bottom" id="SZc-Ch-rZG"/>
-                            <constraint firstItem="h4j-v8-xzn" firstAttribute="leading" secondItem="riu-EP-pvo" secondAttribute="leading" id="cSp-4x-Lcn"/>
-                            <constraint firstItem="DaD-Sd-tEM" firstAttribute="leading" secondItem="riu-EP-pvo" secondAttribute="leading" id="luZ-eU-yba"/>
-                            <constraint firstAttribute="trailing" secondItem="DaD-Sd-tEM" secondAttribute="trailing" id="oTf-kW-BZP"/>
-                            <constraint firstAttribute="bottom" secondItem="h4j-v8-xzn" secondAttribute="bottom" id="tol-pR-3Tp"/>
+                            <constraint firstItem="h4j-v8-xzn" firstAttribute="leading" secondItem="slx-b4-tPD" secondAttribute="leading" id="cSp-4x-Lcn"/>
+                            <constraint firstItem="DaD-Sd-tEM" firstAttribute="leading" secondItem="slx-b4-tPD" secondAttribute="leading" id="luZ-eU-yba"/>
+                            <constraint firstItem="slx-b4-tPD" firstAttribute="trailing" secondItem="DaD-Sd-tEM" secondAttribute="trailing" id="oTf-kW-BZP"/>
+                            <constraint firstItem="slx-b4-tPD" firstAttribute="bottom" secondItem="h4j-v8-xzn" secondAttribute="bottom" id="tol-pR-3Tp"/>
                             <constraint firstItem="qqp-iM-CAE" firstAttribute="top" secondItem="DaD-Sd-tEM" secondAttribute="bottom" id="u86-9x-JiE"/>
-                            <constraint firstItem="qqp-iM-CAE" firstAttribute="leading" secondItem="riu-EP-pvo" secondAttribute="leading" id="y24-NF-Fcw"/>
+                            <constraint firstItem="qqp-iM-CAE" firstAttribute="leading" secondItem="slx-b4-tPD" secondAttribute="leading" id="y24-NF-Fcw"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="slx-b4-tPD"/>
                     </view>
                     <connections>
                         <outlet property="areaTableView" destination="mwq-Ez-bKU" id="1c3-aa-d2U"/>
