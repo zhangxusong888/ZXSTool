@@ -23,6 +23,15 @@ NS_ASSUME_NONNULL_BEGIN
 // 是否选中
 @property (assign, nonatomic) BOOL isSelect;
 
+// 通过省对象创建实例
++ (instancetype)instanceWithProvinceModel:(ZXSProvinceModel *)province;
+
+// 通过市对象创建实例
++ (instancetype)instanceWithCityModel:(ZXSCityModel *)city;
+
+// 通过区对象创建实例
++ (instancetype)instanceWithDistrictModel:(ZXSDistrictModel *)district;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 
 #import "ZXSAreaSelectorViewController.h"
 #import "ZXSMacro.h"
+#import "ZXSAreaCell.h"
+#import "ZXSAreaCellModel.h"
 
 static CGFloat const kIndexStep = 80.0;
 
@@ -18,7 +20,7 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
     KJTAreaIndexUndefined = -1,
 };
 
-@interface ZXSAreaSelectorViewController ()
+@interface ZXSAreaSelectorViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 // 省按钮
 @property (weak, nonatomic) IBOutlet UIButton *provinceButton;
@@ -42,6 +44,8 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
 
 // 地区表格
 @property (weak, nonatomic) IBOutlet UITableView *areaTableView;
+// 表格数据源
+@property (copy, nonatomic) NSArray<ZXSAreaCellModel *> *dataSource;
 
 // 省市区索引
 @property (assign, nonatomic) KJTAreaIndex areaIndex;
@@ -52,7 +56,25 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 表格设置
+    self.areaTableView.delegate = self;
+    self.areaTableView.dataSource = self;
+    self.areaTableView.tableFooterView = [[UIView alloc] init]; // 空数据时防止出现分隔条纹
+    self.areaTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    //
+    NSMutableArray *tempArray = [NSMutableArray array];
+    [self.provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
+        [tempArray addObject:cellModel];
+    }];
+    self.dataSource = [tempArray copy];
+    [self.areaTableView reloadData];
+}
+
+- (void)dealloc {
+    NSLog(@"地址选择页面退出了");
 }
 
 #pragma mark - action
@@ -83,6 +105,35 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
 - (IBAction)districtButtonTouched:(id)sender {
     // 设置索引为区
     self.areaIndex = KJTAreaIndexDistrict;
+}
+
+#pragma mark - UITableViewDelegate, UITableViewDataSource
+// 行数
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+// 单元格
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *reuseId = @"ZXSAreaCell";
+    ZXSAreaCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    ZXSAreaCellModel *cellModel = self.dataSource[indexPath.row];
+    [cell updateWithCellModel:cellModel];
+    
+    return cell;
+}
+
+// 高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0;
+}
+
+// 选中
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 取消选择状态
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
 }
 
 @end
