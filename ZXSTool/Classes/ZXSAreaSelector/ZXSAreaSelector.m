@@ -10,6 +10,7 @@
 #import "ZXSProvinceModel.h"
 #import "ZXSCityModel.h"
 #import "ZXSDistrictModel.h"
+#import "ZXSAreaSelectorViewController.h"
 
 @implementation ZXSAreaSelector
 
@@ -49,7 +50,27 @@
         [tempProvinceArray addObject:province];
     }];
     NSArray *provinceModelArray = [tempProvinceArray copy];
-    NSLog(@"");
+    
+    // 读取故事版资源
+    ZXSAreaSelectorViewController *areaVc = (ZXSAreaSelectorViewController *)[ZXSCommon controllerWithStoryboardName:@"ZXSArea" identifier:@"ZXSAreaSelectorViewController"];
+    
+    // 设置省市区数据源
+    areaVc.provinceArray = provinceModelArray;
+    
+    // 设置回调属性
+    if (currentArea) {
+        areaVc.currentArea = currentArea;
+    }
+    if (selectBlock) {
+        areaVc.selectBlock = selectBlock;
+    }
+    if (cancelBlock) {
+        areaVc.cancelBlock = cancelBlock;
+    }
+    
+    // 全屏present方式展示对话框
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [vc presentViewController:areaVc animated:YES completion:nil];
 }
 
 @end

@@ -7,48 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		135108C6B2CEDC19C7EEE55FA56CF8F5 /* ZXSDistrictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DE3DAABC29434FEDBB43ACED11598 /* ZXSDistrictModel.m */; };
+		08138F3F36B38663DD84A88B3B5C4AB0 /* ZXSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFE1E3035BF3D599212C084B9C0DF4 /* ZXSTool.m */; };
 		15BDD306B53C10AADC3A14F90CCACC29 /* Pods-ZXSTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC196B5EBDB980A41A3998705F686F2A /* Pods-ZXSTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A113EE2783D071F35CEAECC9C9BE2E0 /* ZXSAreaModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ECA3DED9A16F2191EEA3F00D032504 /* ZXSAreaModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CC9DA7788366B2FC06247364639A843 /* Pods-ZXSTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD299BCFEC98CC048AEB0E01E2B1E90 /* Pods-ZXSTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34DD3CAB51325F940032575C267CDBD7 /* ZXSCityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BE621FA426924F24AFBA11F53FA71439 /* ZXSCityModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		456B5D29C6B5D46CD18166DE5D5E054C /* ZXSAreaModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1653A455C48BFA068CD5338318D361EF /* ZXSAreaModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E973D1DE0593893BA0389DC474E13DF /* ZXSCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC95F6CD313D8B5AAD8F5A39A6D79CA /* ZXSCommon.m */; };
-		4EF926EF328DBA76791FB0326E354E33 /* ZXSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEAC8A73C61A49B4A78ACAC07E31CE /* ZXSCityModel.m */; };
+		285690E9204BC0F1627557D8B31556CE /* ZXSAreaSelector in Resources */ = {isa = PBXBuildFile; fileRef = 21A25F592BC87377F4C5599A615E2219 /* ZXSAreaSelector */; };
+		2E6CFC60FB24A2606AF4A719756FE9D5 /* ZXSTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6488D74D97C1D0BBBB45E412225EE613 /* ZXSTool.bundle */; };
+		3337B0BFE773877EB1ADC9DDA51FC026 /* ZXSArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91296380BB4B2067EFA2F5F2992BE82 /* ZXSArea.storyboard */; };
+		382044C9B8D6DE1B4F267ECC8559187E /* ZXSTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 09066CD07A472BE8445C894ED9AF87FF /* ZXSTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE12F41B726EB80FFD549D5AD26E7E9 /* ZXSCityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3AEF72E0CF4FB3C14A0401763928D2 /* ZXSCityModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D5181FF187F849906831856DEBCCC60 /* ZXSAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF35A8DC2AFC7C47315B9165535CEF0 /* ZXSAreaModel.m */; };
+		43BEB4D7E257753C51C515199FD2B135 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4BF1A563E4E4D7E6832559A5D4350877 /* ZXSAreaCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 143EC33C11F9F7E88B20C53EA19CE384 /* ZXSAreaCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57FDDA4079192FDB7E85E308C80D5CD2 /* Pods-ZXSTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C154C4F6599D09776BA5A84A09C3B838 /* Pods-ZXSTool_Tests-dummy.m */; };
-		6B7F63452D2BEBE381E91874A8D50A87 /* ZXSAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202753B5053B34F43F1BADA6C670BB86 /* ZXSAreaModel.m */; };
-		6E595FBEA688C0DB9F4204A25D797535 /* ZXSProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8058850C99376763E057EACE5FE3FF79 /* ZXSProvinceModel.m */; };
-		7AA2924FF963C4F6DDE5FD459E6A1BD0 /* ZXSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 885A8B4358E27BE5854ED4596431001E /* ZXSTool.m */; };
-		7E88F06E0184A6027B449D93E7963514 /* ZXSTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 277E7BBF5F0EB40115F22524792549A3 /* ZXSTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		876094722EA964671FB08809C89DA16B /* ZXSCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDE78479D3A7D1FC6F98337311D171F /* ZXSCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A88D06F0008A01288A5884601958FEA2 /* ZXSAreaSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFBA742BA655AFE60F3A4F069C75A3E /* ZXSAreaSelector.m */; };
-		B2A9F31C9FBBDBDF1ABAC0E2C35308AF /* ZXSArea.json in Resources */ = {isa = PBXBuildFile; fileRef = A8BD4C646D14FBCFEA97DBCD7378FF99 /* ZXSArea.json */; };
-		BD4C7B767145F753720E018733A20957 /* ZXSAreaSelector in Resources */ = {isa = PBXBuildFile; fileRef = D236ED64461433E2749EE1AA62814A71 /* ZXSAreaSelector */; };
-		CBFDEC61ECD255467148A8A992653D5E /* ZXSProvinceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4090370899FA29477F110CDE635DF3 /* ZXSProvinceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1537D6E08137C0F118A12A58BD05135 /* ZXSTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530EDCB194E9F1E446B3DE83B50280F /* ZXSTool-dummy.m */; };
-		DEBC25F7C9EBD99EE80703E3CEE012A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5D35E01944BF2CCCE1CEE9A36E63BE0A /* ZXSArea.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F68132F9ACA42104C82ACD4749BDE05 /* ZXSArea.json */; };
+		6388A96CA489F47269711B65F13C14F9 /* ZXSProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D74D7F2410375C74E77F18B61F1A9E /* ZXSProvinceModel.m */; };
+		78EB00B17C70BCED00B816A12581189C /* ZXSCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 11437B5E096E9D3094F6598D8753102D /* ZXSCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AF64FF421BF9CB0F0547F87D3A295E /* ZXSAreaCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 743E45E7D68C742AEB94E52FAB3CBAA3 /* ZXSAreaCellModel.m */; };
+		7F54C9869E7C5E02D31B4E773AC1F695 /* ZXSAreaSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 010899991656C8F1063079BB09B15C48 /* ZXSAreaSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91CB72936147C2587D82F779A5233823 /* ZXSMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC8A87F383F5EE68DE910FE8FDFD51D /* ZXSMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91FC7FEBC53B81452D5B2CA84A99832C /* ZXSDistrictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D67FC37B1D72C1855DDF4BF78A1AD988 /* ZXSDistrictModel.m */; };
+		A95F8D5F149E2B86A8A254B4C1FE97AF /* ZXSAreaSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D10C8E86F2B0DDCA3B042C68B19CF /* ZXSAreaSelector.m */; };
+		AABA3CE46D0CBA9A65D8A0426CC524FB /* ZXSAreaSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE0E93A58C05AD1D7180A7206D01B8 /* ZXSAreaSelectorViewController.m */; };
+		B0EBBDA1B524E5F478D95AF9E90C5778 /* ZXSTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AD5EF600B14B40E7764ECE63C9E2EF /* ZXSTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6703F22AE285D0C6CECD767E38F4621 /* ZXSCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D567B2D2F027E13F26166638F70CD37C /* ZXSCommon.m */; };
+		BCCE213538A0AC3D6B801056D54E964D /* ZXSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C60347EC34F47C96EF15211CE491CC7 /* ZXSCityModel.m */; };
+		C3EBEDAED86564CDDCC296964F5F3676 /* ZXSDistrictModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 50405F1A3107E3174A48C3A544DA5231 /* ZXSDistrictModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4E72AAAE31A78760E3EAE5EAF66E341 /* ZXSArea.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899EF5BFB5A19394A1690197B5A840AA /* ZXSArea.xcassets */; };
+		C9EBCCA53C88CA16CD8B869921F40AE8 /* ZXSProvinceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C448B8DB6623743685EB17F6F4F7C40A /* ZXSProvinceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAFA872980C6461D62D0112C216285C4 /* ZXSTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAECEB2236DD868B512EF9C6C3C6FB0 /* ZXSTool-dummy.m */; };
+		D5058278ECD93E0199138D1E095C5E26 /* ZXSAreaSelectorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DD55E0ECC67CE1D8D1F48B46182389 /* ZXSAreaSelectorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F8ECF4FD66B74611C0B9947A67D365 /* ZXSAreaCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F36D010511A81736325FBD0D88839D9 /* ZXSAreaCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0934471DE8E119535BD7BC891A4B1BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E13C3A4C42C068898387E2BCA0BDD222 /* ZXSDistrictModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1F80228694439689624E6AAFFF246F /* ZXSDistrictModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4C89A7DA311851A274F85E264D34C34 /* ZXSTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6488D74D97C1D0BBBB45E412225EE613 /* ZXSTool.bundle */; };
 		F1D966FF17686A18E7FE7400E86AB68A /* Pods-ZXSTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A4ED3CA51D189DFB5CC63345E5559 /* Pods-ZXSTool_Example-dummy.m */; };
 		F88091D9616BF1A41B2F8899CC280016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F967896B5BE15F2A4FE5268FB5458171 /* ZXSAreaSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E30D0B68873711DEEEA4445AC4F1C3 /* ZXSAreaSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD672F556C06FF0C5819D81918395B54 /* ZXSTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C51C8F7ED6ECBE55C80DEDCC649930 /* ZXSTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE38B9A6B8E48EE96043476CF2797C7F /* ZXSAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C59E409BA52537A75373A513EB7DF0E /* ZXSAreaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		223653E4C4E5FA9D7246F9DA179E2407 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC3E4D0A9FA924A21192708E67CCA6B1;
-			remoteInfo = "ZXSTool-ZXSTool";
-		};
 		28979F5C1AC368CEF54FAF8A791BCDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9FB23DF15F2ADCAEAA0536D919E67EC8;
 			remoteInfo = "Pods-ZXSTool_Example";
+		};
+		6BE024F17454DF3CF652C3E7F7968D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC3E4D0A9FA924A21192708E67CCA6B1;
+			remoteInfo = "ZXSTool-ZXSTool";
 		};
 		6E442885CD75144FEA35308E93BB610D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -60,56 +69,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010899991656C8F1063079BB09B15C48 /* ZXSAreaSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaSelector.h; sourceTree = "<group>"; };
 		06BCD1EC5BBF80F7B320149D08F23E29 /* Pods-ZXSTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1653A455C48BFA068CD5338318D361EF /* ZXSAreaModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaModel.h; sourceTree = "<group>"; };
-		202753B5053B34F43F1BADA6C670BB86 /* ZXSAreaModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaModel.m; sourceTree = "<group>"; };
-		20543E31AF7AEA356EA31A29463FE063 /* ZXSTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-prefix.pch"; sourceTree = "<group>"; };
-		277E7BBF5F0EB40115F22524792549A3 /* ZXSTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXSTool.h; path = ZXSTool/Classes/ZXSTool.h; sourceTree = "<group>"; };
+		088DB64CC8BBE09AD6FFA0DF41FB139C /* ZXSTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZXSTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		09066CD07A472BE8445C894ED9AF87FF /* ZXSTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXSTool.h; path = ZXSTool/Classes/ZXSTool.h; sourceTree = "<group>"; };
+		0C60347EC34F47C96EF15211CE491CC7 /* ZXSCityModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSCityModel.m; sourceTree = "<group>"; };
+		11437B5E096E9D3094F6598D8753102D /* ZXSCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSCommon.h; sourceTree = "<group>"; };
+		143EC33C11F9F7E88B20C53EA19CE384 /* ZXSAreaCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaCell.h; sourceTree = "<group>"; };
+		14CFE1E3035BF3D599212C084B9C0DF4 /* ZXSTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXSTool.m; path = ZXSTool/Classes/ZXSTool.m; sourceTree = "<group>"; };
+		1D7FD4EBE7B65CA4C8385DF599178998 /* ResourceBundle-ZXSTool-ZXSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZXSTool-ZXSTool-Info.plist"; sourceTree = "<group>"; };
+		1F1553D3185EE3811DEF4DA59BF125A3 /* ZXSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.debug.xcconfig; sourceTree = "<group>"; };
+		20D74D7F2410375C74E77F18B61F1A9E /* ZXSProvinceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSProvinceModel.m; sourceTree = "<group>"; };
+		21A25F592BC87377F4C5599A615E2219 /* ZXSAreaSelector */ = {isa = PBXFileReference; includeInIndex = 1; name = ZXSAreaSelector; path = ZXSTool/Assets/ZXSAreaSelector; sourceTree = "<group>"; };
+		269F61B59E5678745857FA11329F2A3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		291DD4D8C9F1A09C7C58AEC86D2C8A64 /* Pods-ZXSTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2A5F74671DE69B224FBAFE48EEE70DD5 /* Pods-ZXSTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXSTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32ECA3DED9A16F2191EEA3F00D032504 /* ZXSAreaModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaModel.h; sourceTree = "<group>"; };
 		334B017ABED757937A45BC56F9A6108E /* Pods-ZXSTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSTool_Example-Info.plist"; sourceTree = "<group>"; };
-		39C7DF689ACDDE4E36DE72F03639BF81 /* ResourceBundle-ZXSTool-ZXSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZXSTool-ZXSTool-Info.plist"; sourceTree = "<group>"; };
-		3BCEAC8A73C61A49B4A78ACAC07E31CE /* ZXSCityModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSCityModel.m; sourceTree = "<group>"; };
 		3CD299BCFEC98CC048AEB0E01E2B1E90 /* Pods-ZXSTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXSTool_Example-umbrella.h"; sourceTree = "<group>"; };
-		3FC95F6CD313D8B5AAD8F5A39A6D79CA /* ZXSCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSCommon.m; sourceTree = "<group>"; };
-		425896C4B3A980C65414F52FDC2F186B /* ZXSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZXSTool-Info.plist"; sourceTree = "<group>"; };
+		4B50CDFB20962FE25249DC50881EC676 /* ZXSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZXSTool-Info.plist"; sourceTree = "<group>"; };
 		4BC23C24EBE9584BBD6A60C1656E6830 /* Pods-ZXSTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXSTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4F36D010511A81736325FBD0D88839D9 /* ZXSAreaCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaCellModel.h; sourceTree = "<group>"; };
+		50405F1A3107E3174A48C3A544DA5231 /* ZXSDistrictModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSDistrictModel.h; sourceTree = "<group>"; };
 		50C9E9CB65A088E1524C00A717C1707A /* Pods-ZXSTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5530EDCB194E9F1E446B3DE83B50280F /* ZXSTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXSTool-dummy.m"; sourceTree = "<group>"; };
-		5D123ABA5972D1E16403C3FE4F173FE8 /* ZXSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.release.xcconfig; sourceTree = "<group>"; };
+		57AD5EF600B14B40E7764ECE63C9E2EF /* ZXSTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-umbrella.h"; sourceTree = "<group>"; };
+		5C59E409BA52537A75373A513EB7DF0E /* ZXSAreaCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaCell.m; sourceTree = "<group>"; };
+		5FD78EAD4B06D79458BD8D4BB981A5E5 /* ZXSTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZXSTool.modulemap; sourceTree = "<group>"; };
 		6488D74D97C1D0BBBB45E412225EE613 /* ZXSTool.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ZXSTool.bundle; path = "ZXSTool-ZXSTool.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CDE78479D3A7D1FC6F98337311D171F /* ZXSCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSCommon.h; sourceTree = "<group>"; };
+		6FAECEB2236DD868B512EF9C6C3C6FB0 /* ZXSTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXSTool-dummy.m"; sourceTree = "<group>"; };
 		70C02A9C1F454619C93CB25781AC0112 /* Pods-ZXSTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		70C51C8F7ED6ECBE55C80DEDCC649930 /* ZXSTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-umbrella.h"; sourceTree = "<group>"; };
-		724327F76DACDF399635869EDD8A7649 /* ZXSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.debug.xcconfig; sourceTree = "<group>"; };
-		7C1F80228694439689624E6AAFFF246F /* ZXSDistrictModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSDistrictModel.h; sourceTree = "<group>"; };
+		743E45E7D68C742AEB94E52FAB3CBAA3 /* ZXSAreaCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaCellModel.m; sourceTree = "<group>"; };
 		7C5A4ED3CA51D189DFB5CC63345E5559 /* Pods-ZXSTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXSTool_Example-dummy.m"; sourceTree = "<group>"; };
-		7E4090370899FA29477F110CDE635DF3 /* ZXSProvinceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSProvinceModel.h; sourceTree = "<group>"; };
-		8058850C99376763E057EACE5FE3FF79 /* ZXSProvinceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSProvinceModel.m; sourceTree = "<group>"; };
-		885A8B4358E27BE5854ED4596431001E /* ZXSTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXSTool.m; path = ZXSTool/Classes/ZXSTool.m; sourceTree = "<group>"; };
+		7FBE0E93A58C05AD1D7180A7206D01B8 /* ZXSAreaSelectorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaSelectorViewController.m; sourceTree = "<group>"; };
 		887FD1C368A51B1DECC3660495E3C0CA /* Pods-ZXSTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZXSTool_Tests.modulemap"; sourceTree = "<group>"; };
+		899EF5BFB5A19394A1690197B5A840AA /* ZXSArea.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = ZXSArea.xcassets; sourceTree = "<group>"; };
 		8C6E130DE506DA9B8CF2C5BB763A8954 /* Pods_ZXSTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXSTool_Example.framework; path = "Pods-ZXSTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECE640DC3CE7FAFD8E69B9A2936F3F3 /* Pods-ZXSTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8F68132F9ACA42104C82ACD4749BDE05 /* ZXSArea.json */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXSArea.json; sourceTree = "<group>"; };
+		9055190CE05EE133C5E7A4C6FA075C8E /* ZXSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSTool.release.xcconfig; sourceTree = "<group>"; };
 		96061D74745CEC7DB3E1127658DEB63C /* ZXSTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXSTool.framework; path = ZXSTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97DD55E0ECC67CE1D8D1F48B46182389 /* ZXSAreaSelectorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaSelectorViewController.h; sourceTree = "<group>"; };
 		9AE1AA56D55386FA9460A254CD42FD32 /* Pods-ZXSTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXSTool_Tests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1C194CC396D68049020076A913858E5 /* Pods_ZXSTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXSTool_Tests.framework; path = "Pods-ZXSTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A55DE3DAABC29434FEDBB43ACED11598 /* ZXSDistrictModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSDistrictModel.m; sourceTree = "<group>"; };
-		A8BD4C646D14FBCFEA97DBCD7378FF99 /* ZXSArea.json */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXSArea.json; sourceTree = "<group>"; };
-		AFFBA742BA655AFE60F3A4F069C75A3E /* ZXSAreaSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaSelector.m; sourceTree = "<group>"; };
-		B2BB9125DC980454A1132B7C96664345 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BA134FF67406881E81088FC99ED7A55C /* Pods-ZXSTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXSTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BE621FA426924F24AFBA11F53FA71439 /* ZXSCityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSCityModel.h; sourceTree = "<group>"; };
+		BD6BBDF25C16A1530A9E7F199A24D775 /* ZXSTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXSTool-prefix.pch"; sourceTree = "<group>"; };
 		C154C4F6599D09776BA5A84A09C3B838 /* Pods-ZXSTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXSTool_Tests-dummy.m"; sourceTree = "<group>"; };
-		C8E30D0B68873711DEEEA4445AC4F1C3 /* ZXSAreaSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSAreaSelector.h; sourceTree = "<group>"; };
+		C448B8DB6623743685EB17F6F4F7C40A /* ZXSProvinceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSProvinceModel.h; sourceTree = "<group>"; };
+		C54D10C8E86F2B0DDCA3B042C68B19CF /* ZXSAreaSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaSelector.m; sourceTree = "<group>"; };
 		C8FAC95387615B6C29FE680683B21033 /* Pods-ZXSTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZXSTool_Example.modulemap"; sourceTree = "<group>"; };
+		C91296380BB4B2067EFA2F5F2992BE82 /* ZXSArea.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ZXSArea.storyboard; sourceTree = "<group>"; };
 		CE801B1D53A3A335E31AE1E04A29936D /* Pods-ZXSTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXSTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D236ED64461433E2749EE1AA62814A71 /* ZXSAreaSelector */ = {isa = PBXFileReference; includeInIndex = 1; name = ZXSAreaSelector; path = ZXSTool/Assets/ZXSAreaSelector; sourceTree = "<group>"; };
-		DF2BCF565B7061130E06876C4FFC72B7 /* ZXSTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZXSTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CFF35A8DC2AFC7C47315B9165535CEF0 /* ZXSAreaModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSAreaModel.m; sourceTree = "<group>"; };
+		D567B2D2F027E13F26166638F70CD37C /* ZXSCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSCommon.m; sourceTree = "<group>"; };
+		D67FC37B1D72C1855DDF4BF78A1AD988 /* ZXSDistrictModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZXSDistrictModel.m; sourceTree = "<group>"; };
+		E129518475B6BB148D1DD4A51D8D2E03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EC196B5EBDB980A41A3998705F686F2A /* Pods-ZXSTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXSTool_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F6D8A5F384279426EE589115E5F23F07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		FF87467A0964AC95B7EE29508A964819 /* ZXSTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZXSTool.modulemap; sourceTree = "<group>"; };
+		EDC8A87F383F5EE68DE910FE8FDFD51D /* ZXSMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSMacro.h; sourceTree = "<group>"; };
+		FB3AEF72E0CF4FB3C14A0401763928D2 /* ZXSCityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZXSCityModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,18 +139,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AA6A76B5A7618A26969120386E29915 /* Frameworks */ = {
+		4D828E129262FDE5991D235FD5DF8BB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBC25F7C9EBD99EE80703E3CEE012A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FC0FFD466F906DD57352D726875AE96 /* Frameworks */ = {
+		803627E7832E92874F91BC7F709795AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BEB4D7E257753C51C515199FD2B135 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,22 +165,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11745611039110F9607E8DA691499F61 /* ZXSAreaSelector */ = {
+		0CA24AAD6FDCFF9157F76B66F7F00127 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1653A455C48BFA068CD5338318D361EF /* ZXSAreaModel.h */,
-				202753B5053B34F43F1BADA6C670BB86 /* ZXSAreaModel.m */,
-				C8E30D0B68873711DEEEA4445AC4F1C3 /* ZXSAreaSelector.h */,
-				AFFBA742BA655AFE60F3A4F069C75A3E /* ZXSAreaSelector.m */,
-				BE621FA426924F24AFBA11F53FA71439 /* ZXSCityModel.h */,
-				3BCEAC8A73C61A49B4A78ACAC07E31CE /* ZXSCityModel.m */,
-				7C1F80228694439689624E6AAFFF246F /* ZXSDistrictModel.h */,
-				A55DE3DAABC29434FEDBB43ACED11598 /* ZXSDistrictModel.m */,
-				7E4090370899FA29477F110CDE635DF3 /* ZXSProvinceModel.h */,
-				8058850C99376763E057EACE5FE3FF79 /* ZXSProvinceModel.m */,
+				21A25F592BC87377F4C5599A615E2219 /* ZXSAreaSelector */,
+				1B43DA73CE5495549044AC838DD44BF0 /* ZXSAreaSelector */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1B43DA73CE5495549044AC838DD44BF0 /* ZXSAreaSelector */ = {
+			isa = PBXGroup;
+			children = (
+				8F68132F9ACA42104C82ACD4749BDE05 /* ZXSArea.json */,
+				C91296380BB4B2067EFA2F5F2992BE82 /* ZXSArea.storyboard */,
+				899EF5BFB5A19394A1690197B5A840AA /* ZXSArea.xcassets */,
 			);
 			name = ZXSAreaSelector;
-			path = ZXSTool/Classes/ZXSAreaSelector;
+			path = ZXSTool/Assets/ZXSAreaSelector;
 			sourceTree = "<group>";
 		};
 		20760669D1162079CFEB6F1B9EA9B4BB /* Targets Support Files */ = {
@@ -174,32 +194,62 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		248D40F06952960FABCDE5B9B9C6D429 /* Common */ = {
+		2C145837475C020B8EA8DA67ABA0DF1C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6CDE78479D3A7D1FC6F98337311D171F /* ZXSCommon.h */,
-				3FC95F6CD313D8B5AAD8F5A39A6D79CA /* ZXSCommon.m */,
+				E129518475B6BB148D1DD4A51D8D2E03 /* LICENSE */,
+				269F61B59E5678745857FA11329F2A3C /* README.md */,
+				088DB64CC8BBE09AD6FFA0DF41FB139C /* ZXSTool.podspec */,
 			);
-			name = Common;
-			path = ZXSTool/Classes/Common;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3D637354810E27855C7AA7631EB2EC27 /* ZXSAreaSelector */ = {
+			isa = PBXGroup;
+			children = (
+				143EC33C11F9F7E88B20C53EA19CE384 /* ZXSAreaCell.h */,
+				5C59E409BA52537A75373A513EB7DF0E /* ZXSAreaCell.m */,
+				4F36D010511A81736325FBD0D88839D9 /* ZXSAreaCellModel.h */,
+				743E45E7D68C742AEB94E52FAB3CBAA3 /* ZXSAreaCellModel.m */,
+				32ECA3DED9A16F2191EEA3F00D032504 /* ZXSAreaModel.h */,
+				CFF35A8DC2AFC7C47315B9165535CEF0 /* ZXSAreaModel.m */,
+				010899991656C8F1063079BB09B15C48 /* ZXSAreaSelector.h */,
+				C54D10C8E86F2B0DDCA3B042C68B19CF /* ZXSAreaSelector.m */,
+				97DD55E0ECC67CE1D8D1F48B46182389 /* ZXSAreaSelectorViewController.h */,
+				7FBE0E93A58C05AD1D7180A7206D01B8 /* ZXSAreaSelectorViewController.m */,
+				FB3AEF72E0CF4FB3C14A0401763928D2 /* ZXSCityModel.h */,
+				0C60347EC34F47C96EF15211CE491CC7 /* ZXSCityModel.m */,
+				50405F1A3107E3174A48C3A544DA5231 /* ZXSDistrictModel.h */,
+				D67FC37B1D72C1855DDF4BF78A1AD988 /* ZXSDistrictModel.m */,
+				C448B8DB6623743685EB17F6F4F7C40A /* ZXSProvinceModel.h */,
+				20D74D7F2410375C74E77F18B61F1A9E /* ZXSProvinceModel.m */,
+			);
+			name = ZXSAreaSelector;
+			path = ZXSTool/Classes/ZXSAreaSelector;
 			sourceTree = "<group>";
 		};
 		42D99A93DC78DB0705A435E8F5EF7E8F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BEE1933C97F6039FFEA3FE4BEA98B3A /* ZXSTool */,
+				C3F75194B115CED86E58615D8D71E35B /* ZXSTool */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		912599CC424765C0FA1730A5E3F73906 /* Pod */ = {
+		86C28EC0AB59598BF1CE6913FA187BED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F6D8A5F384279426EE589115E5F23F07 /* LICENSE */,
-				B2BB9125DC980454A1132B7C96664345 /* README.md */,
-				DF2BCF565B7061130E06876C4FFC72B7 /* ZXSTool.podspec */,
+				1D7FD4EBE7B65CA4C8385DF599178998 /* ResourceBundle-ZXSTool-ZXSTool-Info.plist */,
+				5FD78EAD4B06D79458BD8D4BB981A5E5 /* ZXSTool.modulemap */,
+				6FAECEB2236DD868B512EF9C6C3C6FB0 /* ZXSTool-dummy.m */,
+				4B50CDFB20962FE25249DC50881EC676 /* ZXSTool-Info.plist */,
+				BD6BBDF25C16A1530A9E7F199A24D775 /* ZXSTool-prefix.pch */,
+				57AD5EF600B14B40E7764ECE63C9E2EF /* ZXSTool-umbrella.h */,
+				1F1553D3185EE3811DEF4DA59BF125A3 /* ZXSTool.debug.xcconfig */,
+				9055190CE05EE133C5E7A4C6FA075C8E /* ZXSTool.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZXSTool";
 			sourceTree = "<group>";
 		};
 		94204EA6580DA40A233D8DF9C07DF645 /* Pods-ZXSTool_Tests */ = {
@@ -218,46 +268,6 @@
 			path = "Target Support Files/Pods-ZXSTool_Tests";
 			sourceTree = "<group>";
 		};
-		96D6DCB2AAB5F515597B633D3CECCADD /* ZXSAreaSelector */ = {
-			isa = PBXGroup;
-			children = (
-				A8BD4C646D14FBCFEA97DBCD7378FF99 /* ZXSArea.json */,
-			);
-			name = ZXSAreaSelector;
-			path = ZXSTool/Assets/ZXSAreaSelector;
-			sourceTree = "<group>";
-		};
-		9BEE1933C97F6039FFEA3FE4BEA98B3A /* ZXSTool */ = {
-			isa = PBXGroup;
-			children = (
-				277E7BBF5F0EB40115F22524792549A3 /* ZXSTool.h */,
-				885A8B4358E27BE5854ED4596431001E /* ZXSTool.m */,
-				248D40F06952960FABCDE5B9B9C6D429 /* Common */,
-				912599CC424765C0FA1730A5E3F73906 /* Pod */,
-				BAAF01BF78DEFA9187246286C1A5D35D /* Resources */,
-				A53116E3041A7CDC7D5F3673D994DD76 /* Support Files */,
-				11745611039110F9607E8DA691499F61 /* ZXSAreaSelector */,
-			);
-			name = ZXSTool;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A53116E3041A7CDC7D5F3673D994DD76 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				39C7DF689ACDDE4E36DE72F03639BF81 /* ResourceBundle-ZXSTool-ZXSTool-Info.plist */,
-				FF87467A0964AC95B7EE29508A964819 /* ZXSTool.modulemap */,
-				5530EDCB194E9F1E446B3DE83B50280F /* ZXSTool-dummy.m */,
-				425896C4B3A980C65414F52FDC2F186B /* ZXSTool-Info.plist */,
-				20543E31AF7AEA356EA31A29463FE063 /* ZXSTool-prefix.pch */,
-				70C51C8F7ED6ECBE55C80DEDCC649930 /* ZXSTool-umbrella.h */,
-				724327F76DACDF399635869EDD8A7649 /* ZXSTool.debug.xcconfig */,
-				5D123ABA5972D1E16403C3FE4F173FE8 /* ZXSTool.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZXSTool";
-			sourceTree = "<group>";
-		};
 		AAA1FF17C0A65A4DDFD57A21D4BF6911 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +277,17 @@
 				96061D74745CEC7DB3E1127658DEB63C /* ZXSTool.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE62AC5F384954FE89CFBDAFA2B1082 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11437B5E096E9D3094F6598D8753102D /* ZXSCommon.h */,
+				D567B2D2F027E13F26166638F70CD37C /* ZXSCommon.m */,
+				EDC8A87F383F5EE68DE910FE8FDFD51D /* ZXSMacro.h */,
+			);
+			name = Common;
+			path = ZXSTool/Classes/Common;
 			sourceTree = "<group>";
 		};
 		B845FC2A365DD7374858913CB137E6A0 /* Pods-ZXSTool_Example */ = {
@@ -286,21 +307,27 @@
 			path = "Target Support Files/Pods-ZXSTool_Example";
 			sourceTree = "<group>";
 		};
-		BAAF01BF78DEFA9187246286C1A5D35D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D236ED64461433E2749EE1AA62814A71 /* ZXSAreaSelector */,
-				96D6DCB2AAB5F515597B633D3CECCADD /* ZXSAreaSelector */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C3F75194B115CED86E58615D8D71E35B /* ZXSTool */ = {
+			isa = PBXGroup;
+			children = (
+				09066CD07A472BE8445C894ED9AF87FF /* ZXSTool.h */,
+				14CFE1E3035BF3D599212C084B9C0DF4 /* ZXSTool.m */,
+				AFE62AC5F384954FE89CFBDAFA2B1082 /* Common */,
+				2C145837475C020B8EA8DA67ABA0DF1C /* Pod */,
+				0CA24AAD6FDCFF9157F76B66F7F00127 /* Resources */,
+				86C28EC0AB59598BF1CE6913FA187BED /* Support Files */,
+				3D637354810E27855C7AA7631EB2EC27 /* ZXSAreaSelector */,
+			);
+			name = ZXSTool;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -341,18 +368,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCA800B70C6BE7890912507833BE0212 /* Headers */ = {
+		F0DA627D7C61F4AC85177467487F0D48 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456B5D29C6B5D46CD18166DE5D5E054C /* ZXSAreaModel.h in Headers */,
-				F967896B5BE15F2A4FE5268FB5458171 /* ZXSAreaSelector.h in Headers */,
-				34DD3CAB51325F940032575C267CDBD7 /* ZXSCityModel.h in Headers */,
-				876094722EA964671FB08809C89DA16B /* ZXSCommon.h in Headers */,
-				E13C3A4C42C068898387E2BCA0BDD222 /* ZXSDistrictModel.h in Headers */,
-				CBFDEC61ECD255467148A8A992653D5E /* ZXSProvinceModel.h in Headers */,
-				FD672F556C06FF0C5819D81918395B54 /* ZXSTool-umbrella.h in Headers */,
-				7E88F06E0184A6027B449D93E7963514 /* ZXSTool.h in Headers */,
+				4BF1A563E4E4D7E6832559A5D4350877 /* ZXSAreaCell.h in Headers */,
+				D6F8ECF4FD66B74611C0B9947A67D365 /* ZXSAreaCellModel.h in Headers */,
+				1A113EE2783D071F35CEAECC9C9BE2E0 /* ZXSAreaModel.h in Headers */,
+				7F54C9869E7C5E02D31B4E773AC1F695 /* ZXSAreaSelector.h in Headers */,
+				D5058278ECD93E0199138D1E095C5E26 /* ZXSAreaSelectorViewController.h in Headers */,
+				3BE12F41B726EB80FFD549D5AD26E7E9 /* ZXSCityModel.h in Headers */,
+				78EB00B17C70BCED00B816A12581189C /* ZXSCommon.h in Headers */,
+				C3EBEDAED86564CDDCC296964F5F3676 /* ZXSDistrictModel.h in Headers */,
+				91CB72936147C2587D82F779A5233823 /* ZXSMacro.h in Headers */,
+				C9EBCCA53C88CA16CD8B869921F40AE8 /* ZXSProvinceModel.h in Headers */,
+				B0EBBDA1B524E5F478D95AF9E90C5778 /* ZXSTool-umbrella.h in Headers */,
+				382044C9B8D6DE1B4F267ECC8559187E /* ZXSTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +430,11 @@
 		};
 		CC3E4D0A9FA924A21192708E67CCA6B1 /* ZXSTool-ZXSTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91F2CD7C5EBCEA76154E0F383CDEBD19 /* Build configuration list for PBXNativeTarget "ZXSTool-ZXSTool" */;
+			buildConfigurationList = F98945AC661054C3C2C70F069D108C20 /* Build configuration list for PBXNativeTarget "ZXSTool-ZXSTool" */;
 			buildPhases = (
-				68CF2265CA1575B99BA51DBB6B284B16 /* Sources */,
-				2FC0FFD466F906DD57352D726875AE96 /* Frameworks */,
-				E126A88A364D7D626865E1B3688B8DCA /* Resources */,
+				B2D8DB4D84C6AC4B99972E5E11D0633D /* Sources */,
+				4D828E129262FDE5991D235FD5DF8BB2 /* Frameworks */,
+				6A720C525AF9971ADBE2AFDEA3165EE1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -416,17 +447,17 @@
 		};
 		D5FF6D360B4C0A1205124FACB15ADBA1 /* ZXSTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AA2F1D092B6E9FFAFFF2DA5F45D4224 /* Build configuration list for PBXNativeTarget "ZXSTool" */;
+			buildConfigurationList = 9C8E21488E0432D52024F90DEFA512D8 /* Build configuration list for PBXNativeTarget "ZXSTool" */;
 			buildPhases = (
-				FCA800B70C6BE7890912507833BE0212 /* Headers */,
-				B6E3CE161981BE5D651EEA4A8767BF81 /* Sources */,
-				1AA6A76B5A7618A26969120386E29915 /* Frameworks */,
-				7EE34E69D325DC26794F489358082AA6 /* Resources */,
+				F0DA627D7C61F4AC85177467487F0D48 /* Headers */,
+				89A1EC44A3F927EC3F960F8CE52D0308 /* Sources */,
+				803627E7832E92874F91BC7F709795AD /* Frameworks */,
+				0483A25A4BF545FA36D0B7905EDD05C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				945DC75B584664AA40CA9EA8CA5D46CA /* PBXTargetDependency */,
+				3B3A1A56EDCCAB3140BC456C0A6019DF /* PBXTargetDependency */,
 			);
 			name = ZXSTool;
 			productName = ZXSTool;
@@ -464,6 +495,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0483A25A4BF545FA36D0B7905EDD05C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6CFC60FB24A2606AF4A719756FE9D5 /* ZXSTool.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BE19E927B5CEE3937B10C5B73254BB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,20 +517,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EE34E69D325DC26794F489358082AA6 /* Resources */ = {
+		6A720C525AF9971ADBE2AFDEA3165EE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C89A7DA311851A274F85E264D34C34 /* ZXSTool.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E126A88A364D7D626865E1B3688B8DCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2A9F31C9FBBDBDF1ABAC0E2C35308AF /* ZXSArea.json in Resources */,
-				BD4C7B767145F753720E018733A20957 /* ZXSAreaSelector in Resources */,
+				5D35E01944BF2CCCE1CEE9A36E63BE0A /* ZXSArea.json in Resources */,
+				3337B0BFE773877EB1ADC9DDA51FC026 /* ZXSArea.storyboard in Resources */,
+				C4E72AAAE31A78760E3EAE5EAF66E341 /* ZXSArea.xcassets in Resources */,
+				285690E9204BC0F1627557D8B31556CE /* ZXSAreaSelector in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,25 +539,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68CF2265CA1575B99BA51DBB6B284B16 /* Sources */ = {
+		89A1EC44A3F927EC3F960F8CE52D0308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE38B9A6B8E48EE96043476CF2797C7F /* ZXSAreaCell.m in Sources */,
+				79AF64FF421BF9CB0F0547F87D3A295E /* ZXSAreaCellModel.m in Sources */,
+				3D5181FF187F849906831856DEBCCC60 /* ZXSAreaModel.m in Sources */,
+				A95F8D5F149E2B86A8A254B4C1FE97AF /* ZXSAreaSelector.m in Sources */,
+				AABA3CE46D0CBA9A65D8A0426CC524FB /* ZXSAreaSelectorViewController.m in Sources */,
+				BCCE213538A0AC3D6B801056D54E964D /* ZXSCityModel.m in Sources */,
+				B6703F22AE285D0C6CECD767E38F4621 /* ZXSCommon.m in Sources */,
+				91FC7FEBC53B81452D5B2CA84A99832C /* ZXSDistrictModel.m in Sources */,
+				6388A96CA489F47269711B65F13C14F9 /* ZXSProvinceModel.m in Sources */,
+				CAFA872980C6461D62D0112C216285C4 /* ZXSTool-dummy.m in Sources */,
+				08138F3F36B38663DD84A88B3B5C4AB0 /* ZXSTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6E3CE161981BE5D651EEA4A8767BF81 /* Sources */ = {
+		B2D8DB4D84C6AC4B99972E5E11D0633D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7F63452D2BEBE381E91874A8D50A87 /* ZXSAreaModel.m in Sources */,
-				A88D06F0008A01288A5884601958FEA2 /* ZXSAreaSelector.m in Sources */,
-				4EF926EF328DBA76791FB0326E354E33 /* ZXSCityModel.m in Sources */,
-				4E973D1DE0593893BA0389DC474E13DF /* ZXSCommon.m in Sources */,
-				135108C6B2CEDC19C7EEE55FA56CF8F5 /* ZXSDistrictModel.m in Sources */,
-				6E595FBEA688C0DB9F4204A25D797535 /* ZXSProvinceModel.m in Sources */,
-				D1537D6E08137C0F118A12A58BD05135 /* ZXSTool-dummy.m in Sources */,
-				7AA2924FF963C4F6DDE5FD459E6A1BD0 /* ZXSTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,17 +581,17 @@
 			target = D5FF6D360B4C0A1205124FACB15ADBA1 /* ZXSTool */;
 			targetProxy = 6E442885CD75144FEA35308E93BB610D /* PBXContainerItemProxy */;
 		};
+		3B3A1A56EDCCAB3140BC456C0A6019DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZXSTool-ZXSTool";
+			target = CC3E4D0A9FA924A21192708E67CCA6B1 /* ZXSTool-ZXSTool */;
+			targetProxy = 6BE024F17454DF3CF652C3E7F7968D0D /* PBXContainerItemProxy */;
+		};
 		8A65B798515D0A4841F83181A5B4E23B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZXSTool_Example";
 			target = 9FB23DF15F2ADCAEAA0536D919E67EC8 /* Pods-ZXSTool_Example */;
 			targetProxy = 28979F5C1AC368CEF54FAF8A791BCDD0 /* PBXContainerItemProxy */;
-		};
-		945DC75B584664AA40CA9EA8CA5D46CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ZXSTool-ZXSTool";
-			target = CC3E4D0A9FA924A21192708E67CCA6B1 /* ZXSTool-ZXSTool */;
-			targetProxy = 223653E4C4E5FA9D7246F9DA179E2407 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,23 +689,6 @@
 			};
 			name = Release;
 		};
-		4C7C499DA870027ECAB9D3DA5F3DBC04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 724327F76DACDF399635869EDD8A7649 /* ZXSTool.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZXSTool";
-				IBSC_MODULE = ZXSTool;
-				INFOPLIST_FILE = "Target Support Files/ZXSTool/ResourceBundle-ZXSTool-ZXSTool-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ZXSTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		6533C7685BCC9B93A1883790BB059394 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8ECE640DC3CE7FAFD8E69B9A2936F3F3 /* Pods-ZXSTool_Example.debug.xcconfig */;
@@ -737,6 +756,37 @@
 			};
 			name = Release;
 		};
+		74EB5FCC3DA9A14055F54BE70687D1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F1553D3185EE3811DEF4DA59BF125A3 /* ZXSTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXSTool/ZXSTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXSTool/ZXSTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZXSTool/ZXSTool.modulemap";
+				PRODUCT_MODULE_NAME = ZXSTool;
+				PRODUCT_NAME = ZXSTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -801,9 +851,9 @@
 			};
 			name = Debug;
 		};
-		7F1E59913A5A32D03E622A2372810851 /* Release */ = {
+		AF2AFA627E0A3FA948EED3BABBAD4F23 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D123ABA5972D1E16403C3FE4F173FE8 /* ZXSTool.release.xcconfig */;
+			baseConfigurationReference = 9055190CE05EE133C5E7A4C6FA075C8E /* ZXSTool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZXSTool";
@@ -815,38 +865,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		9B55E9D8F241B3A216B24D6002FA75C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D123ABA5972D1E16403C3FE4F173FE8 /* ZXSTool.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZXSTool/ZXSTool-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZXSTool/ZXSTool-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZXSTool/ZXSTool.modulemap";
-				PRODUCT_MODULE_NAME = ZXSTool;
-				PRODUCT_NAME = ZXSTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -884,9 +902,26 @@
 			};
 			name = Release;
 		};
-		F6F77D387B05803ABABB201B4660EAED /* Debug */ = {
+		BC83430CFD4DB2877E34CFEE2FE22405 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 724327F76DACDF399635869EDD8A7649 /* ZXSTool.debug.xcconfig */;
+			baseConfigurationReference = 1F1553D3185EE3811DEF4DA59BF125A3 /* ZXSTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZXSTool";
+				IBSC_MODULE = ZXSTool;
+				INFOPLIST_FILE = "Target Support Files/ZXSTool/ResourceBundle-ZXSTool-ZXSTool-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ZXSTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5A1A06ECEA5873096D74B7E1276ED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9055190CE05EE133C5E7A4C6FA075C8E /* ZXSTool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -910,10 +945,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -927,15 +963,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AA2F1D092B6E9FFAFFF2DA5F45D4224 /* Build configuration list for PBXNativeTarget "ZXSTool" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F6F77D387B05803ABABB201B4660EAED /* Debug */,
-				9B55E9D8F241B3A216B24D6002FA75C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6BD9802B23B427BA31E87B2DA582545F /* Build configuration list for PBXNativeTarget "Pods-ZXSTool_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -945,11 +972,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91F2CD7C5EBCEA76154E0F383CDEBD19 /* Build configuration list for PBXNativeTarget "ZXSTool-ZXSTool" */ = {
+		9C8E21488E0432D52024F90DEFA512D8 /* Build configuration list for PBXNativeTarget "ZXSTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C7C499DA870027ECAB9D3DA5F3DBC04 /* Debug */,
-				7F1E59913A5A32D03E622A2372810851 /* Release */,
+				74EB5FCC3DA9A14055F54BE70687D1DF /* Debug */,
+				C5A1A06ECEA5873096D74B7E1276ED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -959,6 +986,15 @@
 			buildConfigurations = (
 				4B1BCC3255A916063C666BB38C04F796 /* Debug */,
 				B45CBB68A1ED2BDA79CF46B0A446B740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98945AC661054C3C2C70F069D108C20 /* Build configuration list for PBXNativeTarget "ZXSTool-ZXSTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC83430CFD4DB2877E34CFEE2FE22405 /* Debug */,
+				AF2AFA627E0A3FA948EED3BABBAD4F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

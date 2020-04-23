@@ -18,6 +18,20 @@
     return jsonObject;
 }
 
+// 从故事版读取Controller
++ (nullable UIViewController *)controllerWithStoryboardName:(NSString *)storyboardName identifier:(NSString *)identifier {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[ZXSCommon resourceBundle]];
+    if (storyboard == nil) {
+        return nil;
+    }
+    
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    if (vc == nil) {
+        return nil;
+    }
+    return vc;
+}
+
 #pragma mark - private
 // 获取资源bundle
 // 打包之后，如果是动态库，是一个ZZTool.framwork;里面包含有一个ZZTool.bundle的资源集合

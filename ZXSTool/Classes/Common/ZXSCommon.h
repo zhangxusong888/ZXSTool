@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 读取json文件内容
 + (nullable id)jsonWithFileName:(NSString *)fileName;
 
+// 从故事版读取Controller
++ (nullable UIViewController *)controllerWithStoryboardName:(NSString *)storyboardName identifier:(NSString *)identifier;
+
 @end
 
 NS_ASSUME_NONNULL_END
