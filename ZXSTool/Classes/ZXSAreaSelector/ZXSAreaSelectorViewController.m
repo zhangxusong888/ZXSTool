@@ -77,11 +77,8 @@ typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
     self.areaTableView.tableFooterView = [[UIView alloc] init]; // 空数据时防止出现分隔条纹
     self.areaTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    // 初始值
-    self.areaIndex = ZXSAreaIndexProvince;
-    self.isSelectProvince = NO;
-    self.isSelectCity = NO;
-    self.isSelectDistrict = NO;
+    // 配置当前选中情况
+    [self configCurrentArea];
 }
 
 - (void)dealloc {
@@ -280,19 +277,6 @@ typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
     [self.areaTableView reloadData];
 }
 
-// 设置省数组，就更新表格数据源到省列表
-- (void)setProvinceArray:(NSArray<ZXSProvinceModel *> *)provinceArray {
-    _provinceArray = provinceArray;
-    
-    // 省表格数据源
-    NSMutableArray *tempArray = [NSMutableArray array];
-    [provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
-        [tempArray addObject:cellModel];
-    }];
-    self.provinceDataSource = [tempArray copy];
-}
-
 // 根据索引设置下划线位置和标签颜色
 - (void)setAreaIndex:(ZXSAreaIndex)areaIndex {
     _areaIndex = areaIndex;
@@ -337,7 +321,7 @@ typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
     }
 }
 
-// 省的选择标志控制市的按钮和标签显示
+// 省的选择标志控制市的按钮和标签隐藏
 - (void)setIsSelectProvince:(BOOL)isSelectProvince {
     _isSelectProvince = isSelectProvince;
     
@@ -347,10 +331,11 @@ typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
     } else {
         self.cityButton.enabled = NO;
         self.cityLabel.hidden = YES;
+        self.provinceLabel.text = @"请选择";
     }
 }
 
-// 市的选择标志控制区的按钮和标签显示
+// 市的选择标志控制区的按钮和标签隐藏
 - (void)setIsSelectCity:(BOOL)isSelectCity {
     _isSelectCity = isSelectCity;
     
@@ -360,6 +345,84 @@ typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
     } else {
         self.districtButton.enabled = NO;
         self.districtLabel.hidden = YES;
+        self.cityLabel.text = @"请选择";
+    }
+}
+
+// 市的选择标志控制区的按钮
+- (void)setIsSelectDistrict:(BOOL)isSelectDistrict {
+    _isSelectDistrict = isSelectDistrict;
+    
+    if (isSelectDistrict) {
+        self.districtButton.enabled = YES;
+        self.districtLabel.hidden = NO;
+    } else {
+        self.districtLabel.text = @"请选择";
+    }
+}
+
+#pragma mark - private
+- (void)configCurrentArea {
+    if (self.currentArea) {
+        // 设置选中的省
+        NSMutableArray *tempArray = [NSMutableArray array];
+        [tempArray removeAllObjects];
+        [self.provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
+            if ([obj.code isEqualToString:self.currentArea.provinceCode]) {
+                cellModel.isSelect = YES;
+                self.selectProvince = obj;
+            }
+            [tempArray addObject:cellModel];
+        }];
+        self.provinceDataSource = [tempArray copy];
+        self.provinceLabel.text = self.currentArea.provinceName;
+        self.isSelectProvince = YES;
+        
+        // 设置选中的市
+        [tempArray removeAllObjects];
+        [self.selectProvince.cityArray enumerateObjectsUsingBlock:^(ZXSCityModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithCityModel:obj];
+            if ([obj.code isEqualToString:self.currentArea.cityCode]) {
+                cellModel.isSelect = YES;
+                self.selectCity = obj;
+            }
+            [tempArray addObject:cellModel];
+        }];
+        self.cityDataSource = [tempArray copy];
+        self.cityLabel.text = self.currentArea.cityName;
+        self.isSelectCity = YES;
+        
+        // 设置选中的区
+        [tempArray removeAllObjects];
+        [self.selectCity.districtArray enumerateObjectsUsingBlock:^(ZXSDistrictModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithDistrictModel:obj];
+            if ([obj.code isEqualToString:self.currentArea.districtCode]) {
+                cellModel.isSelect = YES;
+                self.selectDistrict = obj;
+            }
+            [tempArray addObject:cellModel];
+        }];
+        self.districtDataSource = [tempArray copy];
+        self.districtLabel.text = self.currentArea.districtName;
+        self.isSelectDistrict = YES;
+        
+        // 展示区数据
+        self.areaIndex = ZXSAreaIndexDistrict;
+    } else {
+        // 省表格数据源
+        NSMutableArray *tempArray = [NSMutableArray array];
+        [self.provinceArray enumerateObjectsUsingBlock:^(ZXSProvinceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZXSAreaCellModel *cellModel = [ZXSAreaCellModel instanceWithProvinceModel:obj];
+            [tempArray addObject:cellModel];
+        }];
+        self.provinceDataSource = [tempArray copy];
+        self.isSelectProvince = NO;
+        self.isSelectCity = NO;
+        self.isSelectDistrict = NO;
+        
+        // 展示省数据
+        self.areaIndex = ZXSAreaIndexProvince;
     }
 }
 

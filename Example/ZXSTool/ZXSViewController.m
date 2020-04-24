@@ -11,6 +11,8 @@
 
 @interface ZXSViewController ()
 
+@property (strong, nonatomic) ZXSAreaModel *area;
+
 @end
 
 @implementation ZXSViewController
@@ -22,7 +24,8 @@
 }
 
 - (IBAction)areaSelectorButtonTouched:(id)sender {
-    [ZXSTool launchAreaSelectorOnContorller:self currentArea:nil select:^(ZXSAreaModel * _Nonnull selectArea) {
+    [ZXSTool launchAreaSelectorOnContorller:self currentArea:self.area select:^(ZXSAreaModel * _Nonnull selectArea) {
+        self.area = selectArea;
         NSLog(@"%@%@%@", selectArea.provinceName, selectArea.cityName, selectArea.districtName);
         NSLog(@"%@%@%@", selectArea.provinceCode, selectArea.cityCode, selectArea.districtCode);
     } cancel:nil];
