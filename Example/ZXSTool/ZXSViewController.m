@@ -22,7 +22,10 @@
 }
 
 - (IBAction)areaSelectorButtonTouched:(id)sender {
-    [ZXSTool launchAreaSelectorOnContorller:self currentArea:nil select:nil cancel:nil];
+    [ZXSTool launchAreaSelectorOnContorller:self currentArea:nil select:^(ZXSAreaModel * _Nonnull selectArea) {
+        NSLog(@"%@%@%@", selectArea.provinceName, selectArea.cityName, selectArea.districtName);
+        NSLog(@"%@%@%@", selectArea.provinceCode, selectArea.cityCode, selectArea.districtCode);
+    } cancel:nil];
 }
 
 
