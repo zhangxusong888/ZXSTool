@@ -13,11 +13,11 @@
 static CGFloat const kIndexStep = 80.0;
 
 // 省市区索引
-typedef NS_ENUM(NSInteger,KJTAreaIndex) {
-    KJTAreaIndexProvince = 0,
-    KJTAreaIndexCity= 1,
-    KJTAreaIndexDistrict = 2,
-    KJTAreaIndexUndefined = -1,
+typedef NS_ENUM(NSInteger,ZXSAreaIndex) {
+    ZXSAreaIndexProvince = 0,
+    ZXSAreaIndexCity= 1,
+    ZXSAreaIndexDistrict = 2,
+    ZXSAreaIndexUndefined = -1,
 };
 
 @interface ZXSAreaSelectorViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
 @property (copy, nonatomic) NSArray<ZXSAreaCellModel *> *dataSource;
 
 // 省市区索引
-@property (assign, nonatomic) KJTAreaIndex areaIndex;
+@property (assign, nonatomic) ZXSAreaIndex areaIndex;
 
 @end
 
@@ -83,19 +83,19 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
 // 省按钮响应
 - (IBAction)provinceButtonTouched:(id)sender {
     // 设置索引为省
-    self.areaIndex = KJTAreaIndexProvince;
+    self.areaIndex = ZXSAreaIndexProvince;
 }
 
 // 市按钮响应
 - (IBAction)cityButtonTouched:(id)sender {
     // 设置索引为市
-    self.areaIndex = KJTAreaIndexCity;
+    self.areaIndex = ZXSAreaIndexCity;
 }
 
 // 区按钮响应
 - (IBAction)districtButtonTouched:(id)sender {
     // 设置索引为区
-    self.areaIndex = KJTAreaIndexDistrict;
+    self.areaIndex = ZXSAreaIndexDistrict;
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -144,6 +144,35 @@ typedef NS_ENUM(NSInteger,KJTAreaIndex) {
         [tempArray addObject:cellModel];
     }];
     self.dataSource = [tempArray copy];
+}
+
+// 根据索引设置下划线位置和标签颜色
+- (void)setAreaIndex:(ZXSAreaIndex)areaIndex {
+    _areaIndex = areaIndex;
+    
+    // 下划线位置
+    self.maskLeftConstant.constant = self.areaIndex * kIndexStep;
+    
+    // 标签颜色
+    switch (areaIndex) {
+        case ZXSAreaIndexProvince:
+            self.provinceLabel.textColor = kBlueColor;
+            self.cityLabel.textColor = kBlackColor087;
+            self.districtLabel.textColor = kBlackColor087;
+            break;
+        case ZXSAreaIndexCity:
+            self.provinceLabel.textColor = kBlackColor087;
+            self.cityLabel.textColor = kBlueColor;
+            self.districtLabel.textColor = kBlackColor087;
+            break;
+        case ZXSAreaIndexDistrict:
+            self.provinceLabel.textColor = kBlackColor087;
+            self.cityLabel.textColor = kBlackColor087;
+            self.districtLabel.textColor = kBlueColor;
+            break;
+        default:
+            break;
+    }
 }
 
 @end
