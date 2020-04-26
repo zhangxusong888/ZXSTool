@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 取消的block
 @property (copy, nonatomic, nullable) void(^cancelBlock)(void);
 
-// 通过所有的省数据
+// 所有的省数据
 @property (strong, nonatomic, nonnull) NSArray<ZXSProvinceModel *> *provinceArray;
 
 @end
