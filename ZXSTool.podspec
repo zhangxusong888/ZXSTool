@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
      'ZXSTool' => ['ZXSTool/Assets/**/*']
   }
 
-  s.public_header_files = 'Pod/Classes/ZXSTool.h'
+  s.public_header_files = 'ZXSTool/Classes/ZXSTool.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
