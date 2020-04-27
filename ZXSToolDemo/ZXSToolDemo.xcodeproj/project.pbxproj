@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B31B503224260EAD00E172F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B503124260EAD00E172F4 /* AppDelegate.m */; };
 		B31B503524260EAD00E172F4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B503424260EAD00E172F4 /* SceneDelegate.m */; };
-		B31B503824260EAD00E172F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B503724260EAD00E172F4 /* ViewController.m */; };
 		B31B503B24260EAD00E172F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31B503924260EAD00E172F4 /* Main.storyboard */; };
 		B31B503D24260EAF00E172F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31B503C24260EAF00E172F4 /* Assets.xcassets */; };
 		B31B504024260EAF00E172F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31B503E24260EAF00E172F4 /* LaunchScreen.storyboard */; };
 		B31B504324260EAF00E172F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B504224260EAF00E172F4 /* main.m */; };
+		B380ABFA2456B67A00F66DAC /* ZXSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */; };
 		FAD2BA03D5C4AFCEFE472C19 /* Pods_ZXSToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A60B44710AF7C8B8C8AE84 /* Pods_ZXSToolDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +26,13 @@
 		B31B503124260EAD00E172F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B31B503324260EAD00E172F4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		B31B503424260EAD00E172F4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B31B503624260EAD00E172F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B31B503724260EAD00E172F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B31B503A24260EAD00E172F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B31B503C24260EAF00E172F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31B503F24260EAF00E172F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31B504124260EAF00E172F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B31B504224260EAF00E172F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B380ABF82456B67A00F66DAC /* ZXSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSHomeViewController.h; sourceTree = "<group>"; };
+		B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,6 @@
 				737756F7B64339FA43CF3F58 /* Pods-ZXSToolDemo.debug.xcconfig */,
 				534B336756223A9CDF6B4E06 /* Pods-ZXSToolDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,8 +89,8 @@
 				B31B503124260EAD00E172F4 /* AppDelegate.m */,
 				B31B503324260EAD00E172F4 /* SceneDelegate.h */,
 				B31B503424260EAD00E172F4 /* SceneDelegate.m */,
-				B31B503624260EAD00E172F4 /* ViewController.h */,
-				B31B503724260EAD00E172F4 /* ViewController.m */,
+				B380ABF82456B67A00F66DAC /* ZXSHomeViewController.h */,
+				B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */,
 				B31B503924260EAD00E172F4 /* Main.storyboard */,
 				B31B503C24260EAF00E172F4 /* Assets.xcassets */,
 				B31B503E24260EAF00E172F4 /* LaunchScreen.storyboard */,
@@ -215,10 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31B503824260EAD00E172F4 /* ViewController.m in Sources */,
 				B31B503224260EAD00E172F4 /* AppDelegate.m in Sources */,
 				B31B504324260EAF00E172F4 /* main.m in Sources */,
 				B31B503524260EAD00E172F4 /* SceneDelegate.m in Sources */,
+				B380ABFA2456B67A00F66DAC /* ZXSHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
