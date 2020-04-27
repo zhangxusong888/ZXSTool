@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZXSTool'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = '一些常用的工具类'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   版本 0.2.1    添加省市区选择组件ZXSAreaSelector；
+  版本 0.2.2    添加省市区选择组件的Demo程序；
                        DESC
 
   s.homepage         = 'https://github.com/zhangxusong888'
