@@ -1,5 +1,5 @@
 PODS:
-  - ZXSTool (0.1.0)
+  - ZXSTool (0.2.0)
 
 DEPENDENCIES:
   - ZXSTool (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZXSTool: 3bd00f40bbb3345f086fc58a2bc295ca9f9c284d
+  ZXSTool: e128e99911842afb65cb6f91bb75982f7a1a91f2
 
 PODFILE CHECKSUM: f0c31d95f07bcd6e48a2ce2c8e2eb15d8407ffe5
 

@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  版本0.2.0    添加省市区选择组件ZXSAreaSelector；
+  版本 0.2.0    添加省市区选择组件ZXSAreaSelector；
                        DESC
 
   s.homepage         = 'https://github.com/zhangxusong888'
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
      'ZXSTool' => ['ZXSTool/Assets/**/*']
   }
 
-  s.public_header_files = 'ZXSTool/Classes/ZXSTool.h'
+  s.public_header_files = 'ZXSTool/Classes/ZXSTool.h, ZXSAreaSelector.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
