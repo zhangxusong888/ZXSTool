@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZXSTool'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '一些常用的工具类'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  版本 0.2.0    添加省市区选择组件ZXSAreaSelector；
+  版本 0.2.1    添加省市区选择组件ZXSAreaSelector；
                        DESC
 
   s.homepage         = 'https://github.com/zhangxusong888'
