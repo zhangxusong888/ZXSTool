@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZXSTool'
-  s.version          = '0.1.0'
-  s.summary          = '工具类'
+  s.version          = '0.2.0'
+  s.summary          = '一些常用的工具类'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-一些常用的工具组件
+  版本0.2.0    添加省市区选择组件ZXSAreaSelector；
                        DESC
 
   s.homepage         = 'https://github.com/zhangxusong888'
@@ -26,17 +26,17 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zxs' => 'zhangxusong888@163.com' }
   s.source           = { :git => 'https://github.com/zhangxusong888/ZXSTool.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.jianshu.com/u/5400215b7272'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'ZXSTool/Classes/**/*'
   
-   s.resource_bundles = {
+  s.resource_bundles = {
      'ZXSTool' => ['ZXSTool/Assets/**/*']
-   }
+  }
 
-   s.public_header_files = 'Pod/Classes/ZXSTool.h'
+  s.public_header_files = 'Pod/Classes/ZXSTool.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
