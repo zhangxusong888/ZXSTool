@@ -13,7 +13,11 @@
 		B31B503D24260EAF00E172F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31B503C24260EAF00E172F4 /* Assets.xcassets */; };
 		B31B504024260EAF00E172F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31B503E24260EAF00E172F4 /* LaunchScreen.storyboard */; };
 		B31B504324260EAF00E172F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B504224260EAF00E172F4 /* main.m */; };
-		B380ABFA2456B67A00F66DAC /* ZXSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */; };
+		B380AC012456BB2800F66DAC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B380AC002456BB2800F66DAC /* HomeViewController.m */; };
+		B380AC042456BB9D00F66DAC /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B380AC032456BB9D00F66DAC /* Tool.m */; };
+		B380AC062456BBB200F66DAC /* Area.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B380AC052456BBB200F66DAC /* Area.storyboard */; };
+		B380AC092456BBC700F66DAC /* AreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B380AC082456BBC700F66DAC /* AreaViewController.m */; };
+		B380AC0B2456BEF600F66DAC /* Area.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B380AC0A2456BEF600F66DAC /* Area.xcassets */; };
 		FAD2BA03D5C4AFCEFE472C19 /* Pods_ZXSToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A60B44710AF7C8B8C8AE84 /* Pods_ZXSToolDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +35,14 @@
 		B31B503F24260EAF00E172F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31B504124260EAF00E172F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B31B504224260EAF00E172F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B380ABF82456B67A00F66DAC /* ZXSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSHomeViewController.h; sourceTree = "<group>"; };
-		B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSHomeViewController.m; sourceTree = "<group>"; };
+		B380ABFF2456BB2800F66DAC /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B380AC002456BB2800F66DAC /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B380AC022456BB9D00F66DAC /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		B380AC032456BB9D00F66DAC /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		B380AC052456BBB200F66DAC /* Area.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Area.storyboard; sourceTree = "<group>"; };
+		B380AC072456BBC700F66DAC /* AreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaViewController.h; sourceTree = "<group>"; };
+		B380AC082456BBC700F66DAC /* AreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaViewController.m; sourceTree = "<group>"; };
+		B380AC0A2456BEF600F66DAC /* Area.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Area.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,15 +99,29 @@
 				B31B503124260EAD00E172F4 /* AppDelegate.m */,
 				B31B503324260EAD00E172F4 /* SceneDelegate.h */,
 				B31B503424260EAD00E172F4 /* SceneDelegate.m */,
-				B380ABF82456B67A00F66DAC /* ZXSHomeViewController.h */,
-				B380ABF92456B67A00F66DAC /* ZXSHomeViewController.m */,
+				B380ABFF2456BB2800F66DAC /* HomeViewController.h */,
+				B380AC002456BB2800F66DAC /* HomeViewController.m */,
 				B31B503924260EAD00E172F4 /* Main.storyboard */,
 				B31B503C24260EAF00E172F4 /* Assets.xcassets */,
 				B31B503E24260EAF00E172F4 /* LaunchScreen.storyboard */,
 				B31B504124260EAF00E172F4 /* Info.plist */,
 				B31B504224260EAF00E172F4 /* main.m */,
+				B380AC022456BB9D00F66DAC /* Tool.h */,
+				B380AC032456BB9D00F66DAC /* Tool.m */,
+				B380ABFB2456BAC800F66DAC /* Area */,
 			);
 			path = ZXSToolDemo;
+			sourceTree = "<group>";
+		};
+		B380ABFB2456BAC800F66DAC /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				B380AC052456BBB200F66DAC /* Area.storyboard */,
+				B380AC0A2456BEF600F66DAC /* Area.xcassets */,
+				B380AC072456BBC700F66DAC /* AreaViewController.h */,
+				B380AC082456BBC700F66DAC /* AreaViewController.m */,
+			);
+			path = Area;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +185,9 @@
 			files = (
 				B31B504024260EAF00E172F4 /* LaunchScreen.storyboard in Resources */,
 				B31B503D24260EAF00E172F4 /* Assets.xcassets in Resources */,
+				B380AC0B2456BEF600F66DAC /* Area.xcassets in Resources */,
 				B31B503B24260EAD00E172F4 /* Main.storyboard in Resources */,
+				B380AC062456BBB200F66DAC /* Area.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,10 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B380AC042456BB9D00F66DAC /* Tool.m in Sources */,
 				B31B503224260EAD00E172F4 /* AppDelegate.m in Sources */,
 				B31B504324260EAF00E172F4 /* main.m in Sources */,
 				B31B503524260EAD00E172F4 /* SceneDelegate.m in Sources */,
-				B380ABFA2456B67A00F66DAC /* ZXSHomeViewController.m in Sources */,
+				B380AC012456BB2800F66DAC /* HomeViewController.m in Sources */,
+				B380AC092456BBC700F66DAC /* AreaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

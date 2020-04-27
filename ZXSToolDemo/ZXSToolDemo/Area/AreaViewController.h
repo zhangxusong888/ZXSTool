@@ -1,5 +1,5 @@
 //
-//  ZXSHomeViewController.h
+//  AreaViewController.h
 //  ZXSToolDemo
 //
 //  Created by zxs on 2020/4/27.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZXSHomeViewController : UIViewController
+@interface AreaViewController : UIViewController
 
 @end
 

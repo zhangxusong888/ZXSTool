@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Area View Controller-->
+        <scene sceneID="Hdl-JL-rnb">
+            <objects>
+                <viewController storyboardIdentifier="AreaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jyx-4g-b4w" customClass="AreaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehV-Iv-TOv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-Mj-P0N" userLabel="地区容器">
+                                <rect key="frame" x="0.0" y="420.5" width="414" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENe-qZ-0Cb" userLabel="上分隔线">
+                                        <rect key="frame" x="15" y="0.0" width="384" height="0.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20443600170000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="OjZ-BN-Wv6"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-z8-iRL">
+                                        <rect key="frame" x="16" y="17" width="69.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="向右箭头" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-gm-q77">
+                                        <rect key="frame" x="391" y="21" width="8" height="13"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择省市区" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-NL-5QG">
+                                        <rect key="frame" x="102" y="0.0" width="269" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IT-bw-0yu" userLabel="地区按钮">
+                                        <rect key="frame" x="102" y="0.0" width="269" height="55"/>
+                                        <connections>
+                                            <action selector="areaButtonTouched:" destination="Jyx-4g-b4w" eventType="touchUpInside" id="SsU-3Y-mLe"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-7k-wNV" userLabel="下分隔线">
+                                        <rect key="frame" x="15" y="54.5" width="384" height="0.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20443600170000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="315-LU-f31"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9IT-bw-0yu" firstAttribute="bottom" secondItem="mdd-NL-5QG" secondAttribute="bottom" id="1sq-XI-w4A"/>
+                                    <constraint firstAttribute="bottom" secondItem="LdR-7k-wNV" secondAttribute="bottom" id="DCU-tQ-59o"/>
+                                    <constraint firstItem="mdd-NL-5QG" firstAttribute="top" secondItem="kNb-Mj-P0N" secondAttribute="top" id="J6G-I3-jWy"/>
+                                    <constraint firstItem="9IT-bw-0yu" firstAttribute="leading" secondItem="mdd-NL-5QG" secondAttribute="leading" id="JWF-EE-WAe"/>
+                                    <constraint firstAttribute="bottom" secondItem="mdd-NL-5QG" secondAttribute="bottom" id="Jt1-kb-AbK"/>
+                                    <constraint firstItem="ENe-qZ-0Cb" firstAttribute="leading" secondItem="kNb-Mj-P0N" secondAttribute="leading" constant="15" id="QHg-SL-HFO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ENe-qZ-0Cb" secondAttribute="trailing" constant="15" id="VnM-5n-cbU"/>
+                                    <constraint firstItem="LdR-7k-wNV" firstAttribute="leading" secondItem="kNb-Mj-P0N" secondAttribute="leading" constant="15" id="X3S-XD-OGT"/>
+                                    <constraint firstItem="ZZd-z8-iRL" firstAttribute="leading" secondItem="kNb-Mj-P0N" secondAttribute="leading" constant="16" id="d5e-ja-ltT"/>
+                                    <constraint firstItem="bQc-gm-q77" firstAttribute="centerY" secondItem="kNb-Mj-P0N" secondAttribute="centerY" id="dwX-zk-GLk"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQc-gm-q77" secondAttribute="trailing" constant="15" id="fmC-DZ-qbM"/>
+                                    <constraint firstItem="9IT-bw-0yu" firstAttribute="trailing" secondItem="mdd-NL-5QG" secondAttribute="trailing" id="haz-P1-GzR"/>
+                                    <constraint firstItem="ZZd-z8-iRL" firstAttribute="centerY" secondItem="kNb-Mj-P0N" secondAttribute="centerY" id="ixh-Dt-oJU"/>
+                                    <constraint firstAttribute="height" constant="55" id="rdX-Nw-mcf"/>
+                                    <constraint firstItem="bQc-gm-q77" firstAttribute="leading" secondItem="mdd-NL-5QG" secondAttribute="trailing" constant="20" id="rt0-zQ-QMK"/>
+                                    <constraint firstItem="9IT-bw-0yu" firstAttribute="top" secondItem="mdd-NL-5QG" secondAttribute="top" id="svV-6J-Pwt"/>
+                                    <constraint firstItem="ENe-qZ-0Cb" firstAttribute="top" secondItem="kNb-Mj-P0N" secondAttribute="top" id="uId-Xb-jmB"/>
+                                    <constraint firstItem="mdd-NL-5QG" firstAttribute="leading" secondItem="kNb-Mj-P0N" secondAttribute="leading" constant="102" id="unP-Qo-7Xk"/>
+                                    <constraint firstAttribute="trailing" secondItem="LdR-7k-wNV" secondAttribute="trailing" constant="15" id="vCf-Ai-dHX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kNb-Mj-P0N" firstAttribute="trailing" secondItem="7AR-Dl-yop" secondAttribute="trailing" id="48y-Q0-Kfl"/>
+                            <constraint firstItem="kNb-Mj-P0N" firstAttribute="leading" secondItem="7AR-Dl-yop" secondAttribute="leading" id="b9p-k3-ThZ"/>
+                            <constraint firstItem="kNb-Mj-P0N" firstAttribute="centerY" secondItem="ehV-Iv-TOv" secondAttribute="centerY" id="lDI-Bp-sDk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7AR-Dl-yop"/>
+                    </view>
+                    <connections>
+                        <outlet property="areaTextField" destination="mdd-NL-5QG" id="unc-ck-MOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsN-G6-zrm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="向右箭头" width="8" height="13"/>
+    </resources>
+</document>
